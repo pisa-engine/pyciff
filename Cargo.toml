@@ -1,7 +1,7 @@
 [package]
 name = "pyciff"
 version = "0.2.0"
-authors = ["Michal Siedlaczek <siedlaczek@pm.me>"]
+authors = ["Michal Siedlaczek <siedlaczek@pm.me>", "Joel Mackenzie <joelmmackenzie@gmail.com>"]
 edition = "2018"
 
 [lib]
