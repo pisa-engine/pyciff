@@ -1,8 +1,8 @@
 from .pyciff import *
 
 
-def ciff_to_pisa(input_file, output):
-    ciff_to_pisa_internal(str(input_file), str(output))
+def ciff_to_pisa(input_file, output, write_lexicons):
+    ciff_to_pisa_internal(str(input_file), str(output), write_lexicons)
 
 
 def pisa_to_ciff(collection_input, terms_input, titles_input, output, description):

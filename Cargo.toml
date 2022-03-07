@@ -1,6 +1,6 @@
 [package]
 name = "pyciff"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Michal Siedlaczek <siedlaczek@pm.me>"]
 edition = "2018"
 
@@ -9,7 +9,7 @@ name = "pyciff"
 crate-type = ["cdylib"]
 
 [dependencies]
-ciff = "0.1.1"
+ciff = "0.2.0"
 pyo3 = { version = "0.13", features = ["extension-module"] }
 
 [package.metadata.maturin]

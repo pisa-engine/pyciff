@@ -7,8 +7,8 @@ use pyo3::wrap_pyfunction;
 /// Converts a CIFF index stored in `input_file` to a PISA "binary collection"
 /// (uncompressed inverted index) with a basename `output`.
 #[pyfunction]
-fn ciff_to_pisa_internal(input_file: &str, output: &str) -> PyResult<()> {
-    ciff::ciff_to_pisa(&PathBuf::from(input_file), &PathBuf::from(output))
+fn ciff_to_pisa_internal(input_file: &str, output: &str, output_lexicons: bool) -> PyResult<()> {
+    ciff::ciff_to_pisa(&PathBuf::from(input_file), &PathBuf::from(output), output_lexicons)
         .map_err(|err| PyRuntimeError::new_err(err.to_string()))
 }
 
