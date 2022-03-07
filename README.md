@@ -8,16 +8,17 @@ Usage
 
 Converting CIFF to PISA:
 ```
-pyciff.ciff_to_pisa(input_file, output)
+pyciff.ciff_to_pisa(input_file, output, generate_lexicons)
 ```
 - `input_file` is the input CIFF file.
 - `output` is the *basename* of the output PISA canonical files.
+- `generate_lexicons` is a Boolean flag; if True, the `.termlex` and `.doclex` files will be created.
 
 Example (using the toy CIFF file stored in this repo):
 ```
 $> cd tests
 
-$> python -c "import pyciff; pyciff.ciff_to_pisa('toy-complete-20200309.ciff', 'my-pisa-files')"
+$> python -c "import pyciff; pyciff.ciff_to_pisa('toy-complete-20200309.ciff', 'my-pisa-files', False)"
 
 ----- CIFF HEADER -----
 Version: 1
